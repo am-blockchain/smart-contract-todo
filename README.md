@@ -1,7 +1,7 @@
-# install global dependencies
+# Install global dependencies
 - `npm install -g truffle`
 
-# install package dependencies
+# Install package dependencies
 - in the root folder
   ```
   nvm use
@@ -13,6 +13,10 @@
 - Generate a new mnemonic using https://iancoleman.io/bip39/
 - paste the mnemonic into the `.secret` file
   
+
+# Test on testnet
+`truffle develop`
+
 # Deploying on Matic Network
 Run this command in root of the project directory:
 ```
