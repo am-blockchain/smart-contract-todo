@@ -1,6 +1,8 @@
 # Install global dependencies
 - you will need Node, we are using version 14.4
-- `npm install -g truffle ganache-cli`
+```
+npm install -g truffle ganache-cli
+```
 
 # Metamask setup
 
@@ -19,8 +21,19 @@
 # Compile
 `truffle compile`
 
+# Start Ganache 
+- in a separate terminal: `ganache-cli`
+
+
 # Test on testnet
-`truffle develop`
+```
+truffle develop
+```
+
+# Test on local ganache network
+```
+truffle migrate --network development
+```
 
 # Deploying on Matic Network
 Run this command in root of the project directory:
