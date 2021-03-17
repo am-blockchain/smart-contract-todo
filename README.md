@@ -1,7 +1,19 @@
-# Generate Mnemonic 
-https://iancoleman.io/bip39/
+# install global dependencies
+- `npm install -g truffle`
 
-# Deploying on Matic Network#
+# install package dependencies
+- in the root folder
+  ```
+  nvm use
+  yarn install
+  ```
+
+# Generate Mnemonic
+- create a file in the root folder: `touch .secret`
+- Generate a new mnemonic using https://iancoleman.io/bip39/
+- paste the mnemonic into the `.secret` file
+  
+# Deploying on Matic Network
 Run this command in root of the project directory:
 ```
 $ truffle migrate --network matic
