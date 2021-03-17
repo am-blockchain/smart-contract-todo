@@ -1,5 +1,8 @@
 # Install global dependencies
-- `npm install -g truffle`
+- you will need Node, we are using version 14.4
+- `npm install -g truffle ganache-cli`
+
+# Metamask setup
 
 # Install package dependencies
 - in the root folder
