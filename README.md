@@ -21,11 +21,13 @@ npm install -g truffle ganache-cli
 - paste the mnemonic into the `.secret` file
   
 # Compile
-`truffle compile`
+```
+truffle compile
+```
 
 # Local Deployment
 
-  ## Deploy on Ganache 
+  ### Deploy on Ganache 
   - ganache is a local ethereum network
   - start ganache in a separate terminal: `ganache-cli`
   - deploy the smart contract, in a separate terminal:
@@ -35,7 +37,7 @@ npm install -g truffle ganache-cli
 
   OR 
 
-  ## Deploy on Truffle Local blockchain
+  ### Deploy on Truffle Local blockchain
   (https://www.trufflesuite.com/docs/truffle/getting-started/using-truffle-develop-and-the-console)
   ```
   truffle develop
