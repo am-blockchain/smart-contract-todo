@@ -17,7 +17,7 @@ npm install -g truffle ganache-cli
 
 # Generate Mnemonic
 - create a file in the root folder: `touch .secret`
-- Generate a new mnemonic using https://iancoleman.io/bip39/
+- Generate a new 12-word mnemonic using https://iancoleman.io/bip39/
 - paste the mnemonic into the `.secret` file
   
 # Compile
