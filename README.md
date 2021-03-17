@@ -23,19 +23,24 @@ npm install -g truffle ganache-cli
 # Compile
 `truffle compile`
 
-# Start Ganache 
-- in a separate terminal: `ganache-cli`
+# Local Deployment
 
+  ## Deploy on Ganache 
+  - ganache is a local ethereum network
+  - start ganache in a separate terminal: `ganache-cli`
+  - deploy the smart contract, in a separate terminal:
+  ```
+  truffle migrate --network development
+  ```
 
-# Test on testnet
-```
-truffle develop
-```
+  OR 
 
-# Test on local ganache network
-```
-truffle migrate --network development
-```
+  ## Deploy on Truffle Local blockchain
+  (https://www.trufflesuite.com/docs/truffle/getting-started/using-truffle-develop-and-the-console)
+  ```
+  truffle develop
+  ```
+
 
 # Deploying on Matic Network
 Run this command in root of the project directory:
