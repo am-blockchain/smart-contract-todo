@@ -5,6 +5,8 @@ npm install -g truffle ganache-cli
 ```
 
 # Metamask setup
+- follow this https://docs.matic.network/docs/develop/metamask/config-matic/
+
 
 # Install package dependencies
 - in the root folder
