@@ -13,6 +13,8 @@
 - Generate a new mnemonic using https://iancoleman.io/bip39/
 - paste the mnemonic into the `.secret` file
   
+# Compile
+`truffle compile`
 
 # Test on testnet
 `truffle develop`
