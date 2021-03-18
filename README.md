@@ -45,7 +45,9 @@ truffle compile
   truffle console
   ```
 
-  - on the truffle console, type: `game = await WitcherPoker.deployed()`
+  - on the truffle console, type: `token = await GameToken.deployed()`
+  - to see the value, just type `token` on the console
+  - to print the variable `name`: `token.name()`
 
 
 

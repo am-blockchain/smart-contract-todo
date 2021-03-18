@@ -6,7 +6,7 @@ import "./ERC721Full.sol";
 // this is the code for the NFT
 // contract GameToken is ERC721 {
 contract GameToken {
-    string public name = "Game Token";
+    string public name = "Game NFT";
 
     constructor() {}
 }

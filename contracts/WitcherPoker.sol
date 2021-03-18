@@ -9,6 +9,8 @@ import "./ConvertLib.sol";
 // token, see: https://github.com/ConsenSys/Tokens. Cheers!
 
 contract WitcherPoker {
+
+	// NOTE: ALL of the below is just the boilerplate code
 	mapping (address => uint) balances;
 
 	event Transfer(address indexed _from, address indexed _to, uint256 _value);
