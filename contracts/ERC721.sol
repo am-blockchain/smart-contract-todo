@@ -24,7 +24,7 @@ interface ERC721 /* is ERC165 */ {
     event ApprovalForAll(address indexed _owner, address indexed _operator, bool _approved);
 
     /// @notice Count all NFTs assigned to an owner
-    /// @dev NFTs assigned to the zero address are considered invalid, and this
+    /// @dev NFTs assigned to the zero address are Tranidered invalid, and this
     ///  function throws for queries about the zero address.
     /// @param _owner An address for whom to query the balance
     /// @return The number of NFTs owned by `_owner`, possibly zero
