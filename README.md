@@ -1,7 +1,7 @@
 # Install global dependencies
 - you will need Node, we are using version 14.4
 ```
-npm install -g truffle ganache-cli
+$ npm install -g truffle ganache-cli
 ```
 
 # Metamask setup
@@ -11,28 +11,38 @@ npm install -g truffle ganache-cli
 # Install package dependencies
 - in the root folder
   ```
-  nvm use
-  yarn install
+  $ nvm use
+  $ yarn install
   ```
 
 # Generate Mnemonic
-- create a file in the root folder: `touch .secret`
+- create a file in the root folder: 
+
+```
+$ touch .secret
+```
+
 - Generate a new 12-word mnemonic using https://iancoleman.io/bip39/
 - paste the mnemonic into the `.secret` file
   
 # Compile
 ```
-truffle compile
+$ truffle compile
 ```
 
 # Local Deployment
 
   ### Deploy on Ganache 
   - ganache is a local ethereum network
-  - start ganache in a separate terminal: `ganache-cli`
+  - start ganache in a separate terminal: 
+  
+  ```
+  $ ganache-cli
+  ```
+
   - deploy the smart contract, in a separate terminal:
   ```
-  truffle migrate --network development
+  $ truffle migrate --network development
   ```
 
   ### Interact with the locally deployed Smart Contract
@@ -40,14 +50,17 @@ truffle compile
   - open truffle console by typing:
   
   ```
-  truffle develop
+  $ truffle develop
   or 
-  truffle console
+  $ truffle console
   ```
 
-  - on the truffle console, type: `token = await GameToken.deployed()`
-  - to see the value, just type `token` on the console
-  - to print the variable `name`: `token.name()`
+  - For example, to get the token and print its value, and the value of the variable `name`, on the truffle console, type: 
+  ```
+  $ token = await GameToken.deployed()
+  $ token <!-- this will print the value of the token -->
+  $ token.name()
+  ```
 
 
 
