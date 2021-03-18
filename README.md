@@ -69,3 +69,8 @@ Run this command in root of the project directory:
 ```
 $ truffle migrate --network matic
 ```
+
+  ### Interact with the Smart Contract deployed on Mumbai testnet
+  ```
+  $ truffle console --network matic
+  ``` 
