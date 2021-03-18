@@ -35,13 +35,18 @@ truffle compile
   truffle migrate --network development
   ```
 
-  OR 
-
-  ### Deploy on Truffle Local blockchain
+  ### Interact with the locally deployed Smart Contract
   (https://www.trufflesuite.com/docs/truffle/getting-started/using-truffle-develop-and-the-console)
+  - open truffle console by typing:
+  
   ```
   truffle develop
+  or 
+  truffle console
   ```
+
+  - on the truffle console, type: `game = await WitcherPoker.deployed()`
+
 
 
 # Deploying on Matic Network

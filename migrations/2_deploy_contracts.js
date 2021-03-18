@@ -1,8 +1,10 @@
 const ConvertLib = artifacts.require("ConvertLib");
-const MetaCoin = artifacts.require("MetaCoin");
+const WitcherPoker = artifacts.require("WitcherPoker");
+const GameToken = artifacts.require("GameToken")
 
 module.exports = function(deployer) {
   deployer.deploy(ConvertLib);
-  deployer.link(ConvertLib, MetaCoin);
-  deployer.deploy(MetaCoin);
+  deployer.link(ConvertLib, WitcherPoker);
+  deployer.deploy(GameToken)
+  deployer.deploy(WitcherPoker);
 };
