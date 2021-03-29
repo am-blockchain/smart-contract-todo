@@ -1,5 +1,5 @@
 {
-  "name": "witcher-poker-client",
+  "name": "@witcher-poker/client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
