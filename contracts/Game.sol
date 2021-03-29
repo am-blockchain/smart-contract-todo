@@ -2,12 +2,21 @@
 pragma solidity >=0.6.6 <=0.8.3;
 
 contract Game {
-    uint256 internal bet;
+    // players info
     address internal gameOwner;
     address internal gameOpponent;
 
-    constructor() {}
+    // game info
+    bytes8 firstPlayer;
+    uint256 internal bet;
+    uint8 internal roundCounter = 1;
 
+	constructor() {}
+
+	// events
+	
+
+	// functions
     function createGame(address _owner, uint256 _bet) public {
         gameOwner = _owner;
         bet = _bet;
@@ -15,9 +24,20 @@ contract Game {
 
     function joinGame(address _opponent) public {
         gameOpponent = _opponent;
+		chooseFirstPlayer();
     }
 
-    function chooseFirstPlayer() public {}
+    function chooseFirstPlayer() public {
+        // this should call the random number generator to get a 1 or 2
+		uint8 rnd;
+
+		firstPlayer = gameOwner;
+
+		if (rnd === 2){
+			firstPlayer = gameOpponent;
+		}
+
+    }
 
     function incrementRound() internal {}
 
