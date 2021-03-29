@@ -6,7 +6,7 @@ $ npm install -g truffle ganache-cli
 
 # Metamask setup
 - follow this https://docs.matic.network/docs/develop/metamask/config-matic/
-
+- Fund your wallet from Matic faucet: https://faucet.matic.network/
 
 # Install package dependencies
 - in the root folder
@@ -42,7 +42,9 @@ $ truffle compile
 
   - deploy the smart contract, in a separate terminal:
   ```
-  $ truffle migrate --network development
+  $ truffle migrate --network devGanache
+  OR
+  $ yarn migrate:dev
   ```
 
   ### Interact with the locally deployed Smart Contract
@@ -64,8 +66,32 @@ $ truffle compile
 
 
 
-# Deploying on Matic Network
+# Deploying on Mumbai Testnet
 Run this command in root of the project directory:
 ```
-$ truffle migrate --network matic
+$ truffle migrate --network mumbaiTestnet
+OR
+$ yarn migrate:mumbai
 ```
+
+  ### Interact with the Smart Contract deployed on Mumbai testnet
+  ```
+  $ truffle console --network mumbaiTestnet
+  OR
+  $ yarn console:mumbai
+  ``` 
+
+
+# Deploying on Matic Mainnet
+Run this command in root of the project directory:
+```
+$ truffle migrate --network maticMainnet
+```
+
+  ### Interact with the Smart Contract deployed on Mumbai testnet
+  ```
+  $ truffle console --network maticMainnet
+  ```   
+
+
+# View the contract on this link https://explorer-mumbai.maticvigil.com/
