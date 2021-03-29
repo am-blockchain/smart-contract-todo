@@ -43,6 +43,8 @@ $ truffle compile
   - deploy the smart contract, in a separate terminal:
   ```
   $ truffle migrate --network devGanache
+  OR
+  $ yarn migrate:dev
   ```
 
   ### Interact with the locally deployed Smart Contract
@@ -68,11 +70,15 @@ $ truffle compile
 Run this command in root of the project directory:
 ```
 $ truffle migrate --network mumbaiTestnet
+OR
+$ yarn migrate:mumbai
 ```
 
   ### Interact with the Smart Contract deployed on Mumbai testnet
   ```
   $ truffle console --network mumbaiTestnet
+  OR
+  $ yarn console:mumbai
   ``` 
 
 
