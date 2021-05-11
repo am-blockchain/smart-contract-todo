@@ -40,7 +40,7 @@ $ truffle compile
   $ ganache-cli
   ```
 
-  - deploy the smart contract, in a separate terminal:
+  - deploy the smart contract, in a separate terminal, and from the folder `smart-contract`, type:
   ```
   $ truffle migrate --network devGanache
   OR
@@ -67,7 +67,7 @@ $ truffle compile
 
 
 # Deploying on Mumbai Testnet
-Run this command in root of the project directory:
+Run this command from the folder `smart-contract`:
 ```
 $ truffle migrate --network mumbaiTestnet
 OR

@@ -1,40 +1,13 @@
-import {FC, StrictMode} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import {MetaMaskProvider} from 'metamask-react'
-
-import {EntryRoute} from 'routes/EntryRoute'
-import {ProtectedRoute} from 'routes/ProtectedRoute'
-import { SignIn } from 'pages/SignIn';
-import { Home } from 'pages/Home';
-
-import {sitemap} from './sitemap';
+import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const App: FC = () => (
-  <Switch>
-    <ProtectedRoute exact path={sitemap.home}>
-      <Home />
-    </ProtectedRoute>
-
-    <EntryRoute exact path={sitemap.signIn}>
-      <SignIn />
-    </EntryRoute>
-
-    <Route path="*">
-      <div>Not found</div>
-    </Route>
-  </Switch>
-)
-
 ReactDOM.render(
-  <StrictMode>
-    <MetaMaskProvider>
-      <Router>
-        <App />
-      </Router>
-    </MetaMaskProvider>
-  </StrictMode>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
